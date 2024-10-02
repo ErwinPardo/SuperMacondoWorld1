@@ -128,4 +128,10 @@ public class DirectorController : MonoBehaviour
         }
     }
 
+
+    public double GetCurrentTime()
+    {
+        return director.time;  // Retorna el tiempo actual del Timeline
+    }
+
 }

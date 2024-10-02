@@ -18,8 +18,8 @@ public class ButtonController : MonoBehaviour
     {
         // Cambiar el color del botón al ser presionado
         buttonRenderer.material.color = originalColor * 0.5f; // Oscurece el color
-        
-        if(directorController.loopCanStart ==true)
+
+        if (directorController.loopCanStart == true)
         {
             // Detener el bucle al presionar el botón
             directorController.StopLoop();
