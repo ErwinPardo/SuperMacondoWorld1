@@ -2,43 +2,51 @@ using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
+    public SFXAudioManager sfxAudioManager;
     public DirectorController directorController;  // Asignar el DirectorController desde el inspector
-    private Renderer buttonRenderer;                // Para modificar el color del botÛn
-    private Color originalColor;                    // Color original del botÛn
+    private Renderer buttonRenderer;                // Para modificar el color del bot√≥n
+    private Color originalColor;                    // Color original del bot√≥n
     public float SpeedVelocity = 1.0f;
+
+    public AudioClip clickSound;  // Assign the "Click" sound effect in the Inspector
 
     void Start()
     {
-        buttonRenderer = GetComponent<Renderer>(); // Obtiene el Renderer del botÛn
-        originalColor = buttonRenderer.material.color; // Guarda el color original
+        buttonRenderer = GetComponent<Renderer>();  // Obtiene el Renderer del bot√≥n
+        originalColor = buttonRenderer.material.color;  // Guarda el color original
     }
 
-    // Detectar cuando se pulsa el botÛn
+    // Detectar cuando se pulsa el bot√≥n
     void OnMouseDown()
     {
-        // Cambiar el color del botÛn al ser presionado
-        buttonRenderer.material.color = originalColor * 0.5f; // Oscurece el color
+        // Cambiar el color del bot√≥n al ser presionado
+        buttonRenderer.material.color = originalColor * 0.5f;  // Oscurece el color
+
+        // Play the click sound effect
+        sfxAudioManager.PlaySFX(clickSound, 1.0f);  // Play the "Click" sound at full volume
+
+        //Debug.Log("si");
 
         if (directorController.loopCanStart == true)
         {
-            // Detener el bucle al presionar el botÛn
+            // Detener el bucle al presionar el bot√≥n
             directorController.StopLoop();
 
-            // Acelera el timeline al presionar el botÛn
-            directorController.SetSpeed(SpeedVelocity); // Establecer velocidad de 2x (ajusta seg˙n sea necesario)
+            // Acelera el timeline al presionar el bot√≥n
+            directorController.SetSpeed(SpeedVelocity);  // Establecer velocidad de 2x (ajusta seg√∫n sea necesario)
         }
 
-        // Comprobar si el director est· pausado
+        // Comprobar si el director est√° pausado
         if (directorController.IsPaused())
         {
-            // Si est· pausado, reanudar la timeline
+            // Si est√° pausado, reanudar la timeline
             directorController.ContinueTimeline();
         }
     }
 
     void OnMouseUp()
     {
-        // Restaurar el color original al soltar el botÛn
+        // Restaurar el color original al soltar el bot√≥n
         buttonRenderer.material.color = originalColor;
     }
 }

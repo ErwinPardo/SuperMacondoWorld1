@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rio magdalena_0: -6907261737744506480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

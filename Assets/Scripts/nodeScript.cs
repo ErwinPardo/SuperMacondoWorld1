@@ -2,27 +2,31 @@ using UnityEngine;
 
 public class NodeScript : MonoBehaviour
 {
+    public SFXAudioManager sfxAudioManager;
     public DirectorPlay directorController;  // Referencia al script DirectorController
-    public int nodoId;  // Identificador único para cada nodo
-    public NodoController nodoController;  // Referencia al script NodoController para verificar si el jugador está en este nodo
+    public int nodoId;  // Identificador ï¿½nico para cada nodo
+    public NodoController nodoController;  // Referencia al script NodoController para verificar si el jugador estï¿½ en este nodo
     public ColliderActivator colliderActivator;
+
+    public AudioClip clickSound;  // Assign the "Click" sound effect in the Inspector
 
     void OnMouseDown()
     {
-        // Si el jugador está en este nodo, ejecutamos la acción.
+        // Play the click sound effect
+        sfxAudioManager.PlaySFX(clickSound, 1.0f);  // Play the "Click" sound at full volume
+        // Si el jugador estï¿½ en este nodo, ejecutamos la acciï¿½n.
         if (nodoController != null && nodoController.nodoActual == nodoId)
         {
             if (directorController != null)
             {
                 directorController.ActivateAndPlayDirector();
-                //Debug.Log("El jugador está en el nodo " + nodoId + " y el timeline debería reproducirse.");
+                //Debug.Log("El jugador estï¿½ en el nodo " + nodoId + " y el timeline deberï¿½a reproducirse.");
                 colliderActivator.AddCount(nodoId);
             }
         }
-        // Si el jugador no está en este nodo, lo movemos hacia él.
+        // Si el jugador no estï¿½ en este nodo, lo movemos hacia ï¿½l.
         else if (nodoController != null)
         {
-           
             nodoController.MoverJugador(nodoId); // Movemos el jugador al nodo seleccionado
         }
     }
