@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class NodeScript : MonoBehaviour
 {
     public SFXAudioManager sfxAudioManager;
     public DirectorPlay directorController;  // Referencia al script DirectorController
+    public MovimientoDirector MovimientoDirector;
     public int nodoId;  // Identificador �nico para cada nodo
     public NodoController nodoController;  // Referencia al script NodoController para verificar si el jugador est� en este nodo
     public ColliderActivator colliderActivator;
@@ -15,7 +17,7 @@ public class NodeScript : MonoBehaviour
         // Play the click sound effect
         sfxAudioManager.PlaySFX(clickSound, 1.0f);  // Play the "Click" sound at full volume
         // Si el jugador est� en este nodo, ejecutamos la acci�n.
-        if (nodoController != null && nodoController.nodoActual == nodoId)
+        if (nodoController != null && nodoController.nodoActual == nodoId && MovimientoDirector.getIsMoving() == false)
         {
             if (directorController != null)
             {
@@ -25,7 +27,7 @@ public class NodeScript : MonoBehaviour
             }
         }
         // Si el jugador no est� en este nodo, lo movemos hacia �l.
-        else if (nodoController != null)
+        else if (nodoController != null && MovimientoDirector.getIsMoving() == false)
         {
             nodoController.MoverJugador(nodoId); // Movemos el jugador al nodo seleccionado
         }

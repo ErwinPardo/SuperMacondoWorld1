@@ -55,4 +55,8 @@ public class MovimientoDirector : MonoBehaviour
             }
         }
     }
+
+    public bool getIsMoving() {
+        return isMoving;
+    }
 }
