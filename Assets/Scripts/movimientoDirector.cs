@@ -6,6 +6,7 @@ public class MovimientoDirector : MonoBehaviour
     public PlayableDirector playableDirector;
     private bool isMoving = false;
     private float timeDest;
+    public float VRepro = 1.0f;
 
     private void OnEnable()
     {
@@ -21,16 +22,16 @@ public class MovimientoDirector : MonoBehaviour
             if (playableDirector.time < timeDest)
             {
                 // Movimiento hacia adelante
-                playableDirector.time += Time.deltaTime;
+                playableDirector.time += Time.deltaTime* VRepro;
             }
             else if (playableDirector.time > timeDest)
             {
                 // Movimiento hacia atrás
-                playableDirector.time -= Time.deltaTime;
+                playableDirector.time -= Time.deltaTime* VRepro;
             }
 
             // Pausar cuando llegue al destino
-            if (Mathf.Abs((float)playableDirector.time - timeDest) <= 0.1f)
+            if (Mathf.Abs((float)playableDirector.time - timeDest) <= 0.01f)
             {
                 playableDirector.time = timeDest; // Asegurar que no sobrepase el destino
                 playableDirector.Pause();

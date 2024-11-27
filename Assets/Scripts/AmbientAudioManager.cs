@@ -9,20 +9,7 @@ public class AmbientAudioManager : MonoBehaviour
     public float fadeDuration = 1.0f;            // Duration for fade transitions
     public List<AudioClip> audioClips;           // List of audio clips
     private int currentClipIndex = 0;            // Track the current clip index
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // Persist across scenes
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
+   
     // Play the current ambient music with fade-in option
     public void PlayAmbient(float volume = 1.0f)
     {

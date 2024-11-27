@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2f24df3158b280d46bb78f26e19adc52
+guid: a2afd1ad792fb1a4297ed05f723a01a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7847507539917163674
-    second: estacion 4_0
+      213: -8375994156060073290
+    second: estacion 4 (2)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +84,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
+    buildTarget: Win64
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -98,6 +98,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: estacion 4_0
+      name: estacion 4 (2)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 663b907687d081390800000000000000
-      internalID: -7847507539917163674
+      spriteID: 6b2aa4761bd72cb80800000000000000
+      internalID: -8375994156060073290
       vertices: []
       indices: 
       edges: []
@@ -161,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      estacion 4_0: -7847507539917163674
+      estacion 4 (2)_0: -8375994156060073290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -207,7 +207,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -806,7 +806,7 @@ PrefabInstance:
     - target: {fileID: 5468158435253231695, guid: 93801b06ceeb1f740b5d3d3b9f51ec92, type: 3}
       propertyPath: ambientSource
       value: 
-      objectReference: {fileID: 1126963781}
+      objectReference: {fileID: 1126963786}
     - target: {fileID: 8494940827748181259, guid: 93801b06ceeb1f740b5d3d3b9f51ec92, type: 3}
       propertyPath: m_Name
       value: AudioManagers
@@ -826,7 +826,7 @@ PrefabInstance:
     - target: {fileID: 9187635954899837987, guid: 93801b06ceeb1f740b5d3d3b9f51ec92, type: 3}
       propertyPath: sfxSource
       value: 
-      objectReference: {fileID: 1126963778}
+      objectReference: {fileID: 1126963785}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -989,7 +989,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1632,7 +1632,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2296,7 +2296,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2733,11 +2733,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8494940827748181259, guid: 93801b06ceeb1f740b5d3d3b9f51ec92, type: 3}
   m_PrefabInstance: {fileID: 432789227}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1126963778 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6070610282082971763, guid: 93801b06ceeb1f740b5d3d3b9f51ec92, type: 3}
-  m_PrefabInstance: {fileID: 432789227}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1126963780 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5468158435253231695, guid: 93801b06ceeb1f740b5d3d3b9f51ec92, type: 3}
@@ -2749,11 +2744,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751a780d14b33684f911c81fe08b18b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!82 &1126963781 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8679133013501691781, guid: 93801b06ceeb1f740b5d3d3b9f51ec92, type: 3}
-  m_PrefabInstance: {fileID: 432789227}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1126963783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2795,6 +2785,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 491d7870aa881fa4b9d783cd9c95e27f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1126963785 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6070610282082971763, guid: 93801b06ceeb1f740b5d3d3b9f51ec92, type: 3}
+  m_PrefabInstance: {fileID: 432789227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1126963786 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8679133013501691781, guid: 93801b06ceeb1f740b5d3d3b9f51ec92, type: 3}
+  m_PrefabInstance: {fileID: 432789227}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1147852503
 GameObject:
   m_ObjectHideFlags: 0
@@ -3057,7 +3057,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3543,7 +3543,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4307,7 +4307,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3

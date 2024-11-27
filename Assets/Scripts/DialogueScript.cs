@@ -27,6 +27,12 @@ public class DialogueScript : MonoBehaviour
         dialogueText.text = string.Empty;
     }
 
+    private void OnEnable()
+    {
+        dialogueActive = false;
+        dialogueText.text = string.Empty;
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0) && dialogueActive)
